@@ -186,7 +186,7 @@ color: var(--bg-color);
 }
 /* about design */
 .about{
-    background-image: url(/abimg.png);
+    background-image: url(abimg.png);
     background-size: 120rem;
     background-repeat: no-repeat;
     background-position: 10rem 9rem;
