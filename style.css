@@ -1,0 +1,427 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --bg-color:#ffffff;
+    --second-bg-color:#112e42;
+    --text-color:#000000;
+    --main-color:#662d91;
+}
+.main-theme{
+    --bg-color:#ffffff;
+    --second-bg-color:#112e42;
+    --text-color:#000000;
+    --main-color:#662d91;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: 1.2s;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+}
+ 
+.navbar a{
+    font-weight: 500;
+    font-size: 1.9rem;
+    color: var(--text-color);
+     margin-left: 3.5rem;
+     transition: .3s;
+}
+
+.navbar a:hover,.navbar a.active{
+       color: var(--main-color);
+}
+section{
+    min-height: 100vh;
+    padding:10rem 9% 2rem;
+}
+/* home design */
+.home{
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+}
+
+.homecontent{
+    max-width: 60rem;
+}
+
+.homecontent h1
+{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.homecontent h1 span{
+    color: var(--main-color);
+}
+
+.homecontent #element{
+    width: 32.8rem;
+   position: relative; 
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: .7px var(--main-color);   
+}
+
+.typed-cursor.typed-cursor--blink{
+    font-size: 3.2rem;
+}
+.homecontent p{
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+    line-height: 1.3;
+
+}
+.btnbox{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 35.4rem;
+    height: 5rem;
+}
+.btnbox .btn{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 15rem;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .8rem;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: var(--bg-color);
+    z-index: 1;
+ overflow: hidden;
+ transition: .5s;
+
+}
+
+.btnbox .btn::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: .5s;
+    background-color: var(--bg-color);
+}
+.btnbox .btn:hover:before{
+width: 100%;
+}
+
+.btnbox .btn:hover
+    {
+       color: var(--main-color);
+    }
+.btnbox .btn:nth-child(2){
+color: var(--main-color);
+background: transparent;
+}
+.btnbox .btn:nth-child(2)::before{
+    background: var(--main-color);
+}
+.btnbox .btn:nth-child(2):hover{
+color: var(--bg-color);
+}
+
+.social a{
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    display: inline-flex;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2.4rem;
+    color: var(--main-color);
+    justify-content: center;
+    align-items: center;
+    margin: -10px 10px 20px 10px; 
+    transition: .56s;
+}
+.social a:hover{
+   background-color: var(--main-color);
+    color: var(--bg-color);
+    
+}
+.tilt{
+    width: 45rem;
+    position: relative;
+    left: 18rem;
+    box-shadow: 0px 3px 13px 0px #ccc;
+}
+/* about design */
+.about{
+    background-image: url(/abimg.png);
+    background-size: 120rem;
+    background-repeat: no-repeat;
+    background-position: 10rem 9rem;
+}
+.about h3{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+.about h3 span{
+    color: var(--main-color);
+}
+.about .abcont{
+    position: relative;
+    width: 600px;
+    min-height: 501px;
+    left: 60rem;
+    top: 5rem;
+}
+.about .abcont p{
+    text-align: left;
+    font-size: 1.6rem;
+    line-height: 1.35;
+    margin-bottom: 10px;
+}
+.read
+{
+    font-size: 2rem;
+    color: var(--main-color);
+}
+ .read:hover{
+    border-bottom: .2rem solid var(--main-color);
+ }
+ .experience h3{
+    font-size: 3rem;
+    font-weight:600;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 35px;
+ }
+ .experience h3 span{
+    color: var(--main-color);
+ }
+ .experience .expflex{
+    min-width:100vw;
+     position: relative;
+ }
+ .experience .edu{
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    left: -6rem;
+ }
+ 
+ .experience .exp{
+    color: var(--main-color);
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    left: 60rem;
+ }
+.experience h2{
+    font-size: 2.3rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+.experience .expflex .educationbox{
+    border: 2px solid var(--main-color);
+    border-radius: 12px;
+    height: 15rem;
+    width: 40rem;
+    position: relative;
+    left: 24rem;
+    top:3rem;
+    margin-bottom: 12px;
+    transition: 1s;
+}
+.experience .expflex .educationbox:hover{
+    box-shadow: 2px 5px 13px 2px #ccc;
+}
+.educationbox h4{
+    position: relative;
+    left: 2rem;
+    font-size: 2.1rem;
+    font-weight: 300;
+    color: #000000;
+}
+.educationbox h5{
+    font-size: 12px;
+    position: relative;
+    left: 5rem;
+    top: -1rem;
+
+}
+.educationbox  i{
+    font-size: 2rem;
+    position: relative;
+    top: 10px;
+    left: 19px;
+}
+.educationbox p{
+    padding: 4px 22px;
+    font-size: 10px;
+    color: grey;
+}
+.edu .vr{
+    border: 2px solid var(--main-color);
+    width: 1px;
+    position: absolute;
+    height: 324px;
+    left: 22rem;
+    bottom: 20rem;
+}
+.exp .vr{
+    border: 2px solid var(--main-color);
+    width: 1px;
+    position: absolute;
+    height: 468px;
+    left: 22rem;
+    bottom: 5rem;
+}
+/* skills design */
+.skills h3{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.skills h3 span{
+    color: var(--main-color);
+}
+.skills .skillflex{
+   display:inline-flex;
+}
+ .skills .skillbox{
+    height: 15rem;
+    border: 2px solid var(--main-color);
+    width: 40rem;
+    border-radius: 12px;
+    margin: 5px;
+    transition: 1s;
+    position: relative;
+}
+.skills .skillbox:hover{
+    box-shadow: 2px 5px 13px 2px #ccc;
+}
+.skills .skillbox::before{
+     content:'';
+    width: 0;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color:var(--bg-color);
+}
+.skills .skillbox:hover::before{
+        width: 100%;
+}
+.skills .skillbox .skillicon{
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    display: inline-flex;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2.4rem;
+    color: var(--main-color);
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0 11px 14px;
+}
+.skills .skillbox h2{
+    font-weight: 500;
+    font-size:1.5rem;
+    color: var(--main-color);
+    position: relative;
+    left: 2rem;
+}
+.skills .skillbox p{
+    position: relative;
+    left: 2rem;
+    top: 10px;
+}
+/* contact design */
+.contact{
+    background: url(/contact.png) transparent;
+}
+ .contact h3{
+    font-size: 3rem;
+    font-weight:700;
+    color: var(--text-color);
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+ }
+ .contact h3 span{
+    color: var(--main-color);
+ }
+ .contact form{
+    max-height: 70rem;
+    text-align: center;
+ }
+ .contact form .inputbox,.contact form .textareabox{
+    position: relative;
+    width: 49%;
+    margin: .8rem 0;
+ }
+ .contact form .inputbox input,.contact form .textareabox textarea{
+    width: 100%;
+    height: 100%;
+    padding: 1.6rem;
+    border: .1rem solid var(--main-color);
+    border-radius: 23px;
+    color: #000000;
+    font-size: 1.4rem;
+ }
+ .footerbox{
+height: 0;
+ }
+ .footerbox a{
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    display:flex;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2.4rem;
+    color: var(--main-color);
+    justify-content: center;
+    align-items: center;
+    margin: -10px 0 30px 0;
+    transition: .56s;
+    position: relative;
+    left: 700px;
+    bottom: 350px;
+ }
+ .footerbox a:hover{
+    background-color: var(--main-color);
+    color: var(--bg-color);
+ }
