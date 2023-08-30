@@ -174,10 +174,15 @@ color: var(--bg-color);
     
 }
 .tilt{
-    width: 45rem;
+    width: 50rem;
     position: relative;
     left: 18rem;
     box-shadow: 0px 3px 13px 0px #ccc;
+    transition: 1s;
+}
+.tilt:hover{
+    z-index: 2;
+    transform: scale(1.1);
 }
 /* about design */
 .about{
