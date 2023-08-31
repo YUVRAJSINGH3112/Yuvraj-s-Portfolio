@@ -436,6 +436,13 @@ height: 0;
     }
 }
 @media screen and (max-width:991px) {
+    html,body{
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
     .header{
         padding: 2rem 4%;
     }
@@ -448,6 +455,13 @@ height: 0;
 }
 
 @media screen and (max-width:758px) {
+    html,body{
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
     .header{
         background-color: var(--bg-color);
     }
@@ -479,7 +493,16 @@ height: 0;
        left: 30rem;
     }
     .homecontent{
-        width: 100%;
+     
     }
 
+}
+@media screen and (max-width:458px){
+html,body{
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
 }
