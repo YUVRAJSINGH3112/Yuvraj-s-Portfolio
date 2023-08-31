@@ -505,4 +505,6 @@ html,body{
     padding:0;
     overflow-x:hidden;
 }
+    .tilt{
+      display:none;
 }
