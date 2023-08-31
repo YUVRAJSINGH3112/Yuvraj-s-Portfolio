@@ -430,3 +430,25 @@ height: 0;
     background-color: var(--main-color);
     color: var(--bg-color);
  }
+
+
+
+ @media screen and (max-width:600px){
+
+    section{
+        width: 100vw;
+    }
+    .home{
+        display: block;
+    }
+    .homecontent{
+        position: relative;
+        top: 2rem;
+        width: 20rem;
+    }
+    .skills h3{
+        position: relative;
+        left: 45rem;
+        font-size: 5rem;
+    }
+ }
