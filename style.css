@@ -430,22 +430,56 @@ height: 0;
 
 
 
- @media screen and (max-width:600px){
-
+@media screen and (max-width:1200px) {
+    html{
+        font-size: 55%;
+    }
+}
+@media screen and (max-width:991px) {
+    .header{
+        padding: 2rem 4%;
+    }
     section{
-        width: 100vw;
+        padding: 10rem 4% 2rem;
     }
     .home{
+        padding: 0 4%;
+    }
+}
+
+@media screen and (max-width:758px) {
+    .header{
+        background-color: var(--bg-color);
+    }
+    #menu-icon{
         display: block;
     }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        padding: 1rem 4%;
+        box-shadow: .4rem 1rem #eee;
+        transition: .35s ease;
+        transition-delay: .25s;
+        left: -100%;
+    }
+    .navbar.active{
+        left:0;
+        transition-delay: 0s;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2.8rem;
+        margin: 3rem;
+    }
+    .tilt{
+       position: absolute;
+       top: 50rem;
+       left: 30rem;
+    }
     .homecontent{
-        position: relative;
-        top: 2rem;
-        width: 20rem;
+        width: 100%;
     }
-    .skills h3{
-        position: relative;
-        left: 45rem;
-        font-size: 5rem;
-    }
- }
+
+}
