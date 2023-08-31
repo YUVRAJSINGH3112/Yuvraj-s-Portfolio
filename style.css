@@ -513,14 +513,14 @@ html,body{
     .homecontent{
         width: 100%;
         position: relative;
-        top: 20rem;
+        top: 12rem;
     }
     .tilt{
         width: 30rem;
         overflow-x: hidden;
         position: relative;
         left: 0;
+        top:-5rem;
     }
-    .tilt{
-       width:28rem;
+    
 }
