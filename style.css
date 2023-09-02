@@ -177,8 +177,6 @@ color: var(--bg-color);
     width: 50rem;
     position: relative;
     left: 18rem;
-    box-shadow: 0px 3px 13px 0px #ccc;
-    transition: 1s;
     z-index:-1;
 }
 /* about design */
@@ -487,10 +485,17 @@ height: 0;
         font-size: 2.8rem;
         margin: 3rem;
     }
+    .home{
+         flex-direction: column;
+        width:100%;
+        overflow-x:hidden;
+    }
     .tilt{
-       position: absolute;
-       top: 50rem;
-       left: 30rem;
+       width: 32rem;
+        overflow-x: hidden;
+        position: relative;
+        left: 0;
+        top: 15rem;
     }
     .homecontent{
      
@@ -516,7 +521,7 @@ html,body{
         top: 12rem;
     }
     .tilt{
-        width: 30rem;
+        width: 32rem;
         overflow-x: hidden;
         position: relative;
         left: 0;
