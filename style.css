@@ -538,4 +538,7 @@ html,body{
     .conflex .congif{
         display: none;
     }
+    .contact form .inputbox,.contact form .textareabox{
+        width:100%;
+    }
 }
