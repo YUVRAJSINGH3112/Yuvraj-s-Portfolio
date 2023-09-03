@@ -529,7 +529,7 @@ html,body{
     .about .abflex{
         flex-direction: column;
         justify-content: center;
-        gap: 10rem;
+        gap: 1rem;
 
     }
     .about .abimg img{
@@ -541,6 +541,7 @@ html,body{
 }
     .contact .conflex{
         flex-direction: column;
+        justify-content: center;
     }
     .conflex .congif{
         display: none;
