@@ -41,6 +41,7 @@ body{
     left: 0;
     width: 100%;
     padding: 2rem 9%;
+    z-index:-1;
 }
  
 .navbar a{
@@ -192,7 +193,7 @@ color: var(--bg-color);
     color: var(--main-color);
 }
 .about .abimg{
-    width: 425rem;
+   max-width:125rem
     height: 25rem;
     display: flex;
     justify-content: center;
@@ -532,6 +533,9 @@ html,body{
         width: 18rem;
         margin-top:14rem ;
     }
+    .skills .skillflex {
+     flex-direction:column;
+}
     .contact .conflex{
         flex-direction: column;
     }
@@ -540,5 +544,8 @@ html,body{
     }
     .contact form .inputbox,.contact form .textareabox{
         width:100%;
+    }
+    .contact .btnbox{
+     margin:auto;        
     }
 }
