@@ -548,7 +548,6 @@ html,body{
 }
     .contact .conflex{
         flex-direction: column;
-        justify-content: center;
     }
     .conflex .congif{
         display: none;
@@ -557,6 +556,7 @@ html,body{
         width:100%;
     }
     .contact .btnbox{
-     margin:auto;        
+     margin:auto;
+     justify-content: center;
     }
 }
