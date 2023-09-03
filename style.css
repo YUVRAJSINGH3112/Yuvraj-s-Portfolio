@@ -520,7 +520,7 @@ html,body{
     .homecontent{
         width: 100%;
         position: relative;
-        top: 12rem;
+        top: 15rem;
     }
     .tilt{
         width: 40rem;
@@ -541,6 +541,9 @@ html,body{
     .about .abimg img{
         width: 18rem;
         margin:4rem 0;
+    }
+    .about .abcont p{
+        z-index:1;
     }
     .skills .skillflex {
      flex-direction:column;
