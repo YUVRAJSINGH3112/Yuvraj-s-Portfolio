@@ -544,6 +544,7 @@ html,body{
     }
     .skills .skillflex {
      flex-direction:column;
+        margin-right:5rem;
 }
     .contact .conflex{
         flex-direction: column;
