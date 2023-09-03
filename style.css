@@ -192,6 +192,12 @@ color: var(--bg-color);
 .about h3 span{
     color: var(--main-color);
 }
+.about .abflex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16rem;
+}
 .about .abimg{
    max-width:125rem
     height: 25rem;
@@ -205,9 +211,6 @@ color: var(--bg-color);
     border-radius: 100%;
     box-shadow: 0px 2px 12px 0px #662d91;
     border: 1px solid var(--main-color);
-}
-.about .abcont{
-    
 }
 .about .abcont p{
     text-align: left;
@@ -531,7 +534,7 @@ html,body{
     }
     .about .abimg img{
         width: 18rem;
-        margin-top:14rem ;
+        margin:4rem 0;
     }
     .skills .skillflex {
      flex-direction:column;
