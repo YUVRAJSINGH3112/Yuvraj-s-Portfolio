@@ -40,8 +40,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
-    z-index:-1;
+    padding: 2rem 9%;    
 }
  
 .navbar a{
@@ -199,7 +198,7 @@ color: var(--bg-color);
     gap: 16rem;
 }
 .about .abimg{
-   max-width:125rem
+   max-width:400rem
     height: 25rem;
     display: flex;
     justify-content: center;
@@ -501,6 +500,10 @@ color: var(--bg-color);
     }
 
 }
+
+
+
+
 @media screen and (max-width:458px){
 html,body{
     height:100%;
@@ -520,17 +523,20 @@ html,body{
         top: 12rem;
     }
     .tilt{
-        width: 32rem;
+        width: 40rem;
         overflow-x: hidden;
         position: relative;
         left: 0;
         top: 15rem;
+        z-index:1;
     }
     .about .abflex{
         flex-direction: column;
         justify-content: center;
-        gap: 1rem;
-
+        gap: 0;
+    }
+    .about .abcont{
+        z-index:1;
     }
     .about .abimg img{
         width: 18rem;
