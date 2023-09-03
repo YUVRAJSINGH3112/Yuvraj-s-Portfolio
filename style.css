@@ -181,10 +181,7 @@ color: var(--bg-color);
 }
 /* about design */
 .about{
-    background-image: url(abimg.png);
-    background-size: 120rem;
-    background-repeat: no-repeat;
-    background-position: 10rem 9rem;
+   
 }
 .about h3{
     font-size: 3rem;
@@ -194,12 +191,22 @@ color: var(--bg-color);
 .about h3 span{
     color: var(--main-color);
 }
-.about .abcont{
+.about .abimg{
+    width: 425rem;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 600px;
-    min-height: 501px;
-    left: 60rem;
-    top: 5rem;
+}
+.about .abimg img{
+    width: 27rem;
+    border-radius: 100%;
+    box-shadow: 0px 2px 12px 0px #662d91;
+    border: 1px solid var(--main-color);
+}
+.about .abcont{
+    
 }
 .about .abcont p{
     text-align: left;
@@ -526,6 +533,16 @@ html,body{
         position: relative;
         left: 0;
         top: 15rem;
+    }
+    .about .abflex{
+        flex-direction: column;
+        justify-content: center;
+        gap: 10rem;
+
+    }
+    .about .abimg img{
+        width: 18rem;
+        margin-top:14rem ;
     }
     
 }
