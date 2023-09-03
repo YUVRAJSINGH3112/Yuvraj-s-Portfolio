@@ -437,7 +437,7 @@ color: var(--bg-color);
     overflow-x:hidden;
 }
     .header{
-        padding: 2rem 4%;
+        padding: 2rem 4% ;
     }
     section{
         padding: 10rem 4% 2rem;
