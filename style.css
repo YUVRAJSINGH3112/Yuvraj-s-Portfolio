@@ -393,6 +393,7 @@ color: var(--bg-color);
  .contact form{
     max-height: 70rem;
     text-align: center;
+    width: 100%;
  }
  .contact form .inputbox,.contact form .textareabox{
     position: relative;
@@ -408,31 +409,18 @@ color: var(--bg-color);
     color: #000000;
     font-size: 1.4rem;
  }
- .footerbox{
-height: 0;
- }
- .footerbox a{
-    height: 40px;
-    width: 40px;
-    background: transparent;
-    display:flex;
-    border: 2px solid var(--main-color);
-    border-radius: 50%;
-    font-size: 2.4rem;
-    color: var(--main-color);
-    justify-content: center;
+ .contact .conflex{
+    display: flex;
     align-items: center;
-    margin: -10px 0 30px 0;
-    transition: .56s;
+    justify-content: center;
+    max-width: 85rem;
+ }
+ .contact .conflex .congif{
+    width: 15rem;
     position: relative;
-    left: 700px;
-    bottom: 350px;
+    top: 12px;
+    left: 12px;
  }
- .footerbox a:hover{
-    background-color: var(--main-color);
-    color: var(--bg-color);
- }
-
 
 
 @media screen and (max-width:1200px) {
@@ -544,5 +532,10 @@ html,body{
         width: 18rem;
         margin-top:14rem ;
     }
-    
+    .contact .conflex{
+        flex-direction: column;
+    }
+    .conflex .congif{
+        display: none;
+    }
 }
