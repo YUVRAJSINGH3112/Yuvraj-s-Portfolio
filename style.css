@@ -459,10 +459,12 @@ color: var(--bg-color);
     overflow-x:hidden;
 }
     .header{
-        background-color: var(--bg-color);
+        background-color: transparent;
+        z-index:1;
     }
     #menu-icon{
         display: block;
+        font-size:3rem;
     }
     .navbar{
         position: absolute;
@@ -477,6 +479,7 @@ color: var(--bg-color);
     .navbar.active{
         left:0;
         transition-delay: 0s;
+        background-color:white;
     }
     .navbar a{
         display: block;
@@ -524,6 +527,7 @@ html,body{
         width: 100%;
         position: relative;
         top: 15rem;
+        z-index:-1;
     }
     .tilt{
         width: 40rem;
@@ -531,7 +535,6 @@ html,body{
         position: relative;
         left: 0;
         top: 15rem;
-        z-index:1;
     }
 
     
@@ -547,9 +550,7 @@ html,body{
         width: 18rem;
         margin:4rem 0;
     }
-    .about .abcont p{
-        z-index:1;
-    }
+   
     
     .skills .skillflex {
      flex-direction:column;
@@ -565,7 +566,7 @@ html,body{
         flex-direction: column;
         gap:3rem;
     }
-    .conflex .congif{
+    .contact .conflex .congif{
         width:34rem;
     }
     .contact form .inputbox,.contact form .textareabox{
