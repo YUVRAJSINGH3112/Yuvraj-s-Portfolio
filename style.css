@@ -414,14 +414,14 @@ color: var(--bg-color);
  }
  .contact .conflex{
     display: flex;
+     flex-direction:row;
     align-items: center;
     justify-content: center;
     max-width: 85rem;
  }
  .contact .conflex .congif{
    width: 53rem;
-    position: absolute;
-   left: 89rem;
+    
  }
 
 
@@ -569,16 +569,10 @@ html,body{
             position: relative;
             left: 10rem;
 }
-    }
-    
-   
-    
     .skills .skillflex {
      flex-direction:column;
         margin-left:3rem;
 }
-
-
 
     .contact h3{
         margin-bottom:0rem;
