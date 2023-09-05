@@ -526,7 +526,6 @@ html,body{
         width: 100%;
         position: relative;
         top: 15rem;
-        z-index:-1;
     }
     .tilt{
         width: 40rem;
