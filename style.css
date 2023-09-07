@@ -473,8 +473,9 @@ color: var(--bg-color);
     max-width: 85rem;
  }
  .contact .conflex .congif{
-   width: 53rem;
-    
+       width:52rem
+     position: absolute;
+    left: 90rem;
  }
 
 
