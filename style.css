@@ -453,7 +453,7 @@ color: var(--bg-color);
  }
  .contact form .inputbox,.contact form .textareabox{
     position: relative;
-    width: 59%;
+    width: 65%;
     margin: .8rem 0;
  }
  .contact form .inputbox input,.contact form .textareabox textarea{
@@ -636,6 +636,7 @@ html,body{
     }
     .contact .conflex .congif{
         width:34rem;
+        position:static;
     }
     .contact form .inputbox,.contact form .textareabox{
         width:100%;
