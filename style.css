@@ -180,9 +180,6 @@ color: var(--bg-color);
     z-index:-1;
 }
 /* about design */
-.about{
-   
-}
 .about h3{
     font-size: 3rem;
     font-weight: 700;
@@ -198,7 +195,7 @@ color: var(--bg-color);
     gap: 16rem;
 }
 .about .abimg{
-   max-width:400rem
+   max-width:400rem;
     height: 25rem;
     display: flex;
     justify-content: center;
@@ -495,10 +492,7 @@ color: var(--bg-color);
         left: 0;
         top: 15rem;
     }
-    .homecontent{
-     
-    }
-
+   
 }
 
 
