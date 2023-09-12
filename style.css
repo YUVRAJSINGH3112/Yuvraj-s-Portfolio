@@ -473,7 +473,7 @@ color: var(--bg-color);
     }
     .navbar.active{
         left:0;
-        transition-delay: 0s;
+        transition-delay: 0.01s;
     }
     .navbar a{
         display: block;
