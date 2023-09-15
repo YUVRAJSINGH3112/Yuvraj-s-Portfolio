@@ -32,6 +32,23 @@ body{
     color: var(--text-color);
     transition: 1.2s;
 }
+#preloader{
+    background: #ffffff;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    animation: delayleft 1s ease forwards;
+    animation-delay: .2s;
+}
+#menu-icon{
+    display: none;
+}
 .header{
     display: flex;
     justify-content: space-between;
@@ -67,6 +84,8 @@ section{
 
 .homecontent{
     max-width: 60rem;
+    position: relative;
+    top: 4rem;
 }
 
 .homecontent h1
@@ -94,7 +113,9 @@ section{
 .homecontent p{
     font-size: 1.6rem;
     margin: 2rem 0 4rem;
-    line-height: 1.3;
+    line-height: 1.6;
+    animation: delayleft 1s ease forwards;
+    animation-delay: .5s;
 
 }
 .btnbox{
@@ -178,51 +199,57 @@ color: var(--bg-color);
     position: relative;
     left: 18rem;
     z-index:-1;
+    animation: delayright 1s ease forwards;
+    animation-delay: .5s;
 }
 /* about design */
+.aboutbox{
+        box-shadow: 0px 4px 13px 2px #ccc;
+        border-radius: 5%;
+        margin: auto;
+        width: 70vw;
+        padding: 3rem 9% 2rem;
+        min-height: max-content;
+        box-shadow: 0px 3px 12px 4px #ccc;
+        margin-top: 5rem;
+        animation: delaybottom 1s ease forwards;
+}
 .about h3{
     font-size: 3rem;
     font-weight: 700;
     text-align: center;
+    margin-bottom: 5rem;
 }
 .about h3 span{
     color: var(--main-color);
 }
-.about .abflex{
+.about img{
+    width: 27rem;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16rem;
-}
-.about .abimg{
-   max-width:400rem;
-    width: 425rem;
-    height: 25rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.about .abimg img{
-    width: 270rem;
-    border-radius: 100%;
-    box-shadow: 0px 2px 12px 0px #662d91;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 0px 2px 12px 0px #ccc;
     border: 1px solid var(--main-color);
 }
-.about .abcont p{
-    text-align: left;
+.about p{
+    margin-top: 5rem;
+    text-align: center;
     font-size: 1.6rem;
-    line-height: 1.35;
+    line-height: 1.6;
     margin-bottom: 10px;
 }
-.read
-{
-    font-size: 2rem;
+.abcont h5{
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 3rem 0;
+}
+.abcont h5 span{
     color: var(--main-color);
 }
- .read:hover{
-    border-bottom: .2rem solid var(--main-color);
- }
+
+
+
+/* experiencesection design */
  .experience h3{
     font-size: 3rem;
     font-weight:600;
@@ -415,12 +442,14 @@ color: var(--bg-color);
     bottom: 3rem;
     position: relative;
     left: 2rem;
+    color: #000000;
 }
 .projectcontainer p{
     font-size: 10px;
     position: relative;
     left: 2rem;
     bottom: 2rem;
+    color: #000000;
     line-height: 1.6;
 }
 
@@ -591,28 +620,23 @@ html,body{
     }
 
     
-    .about .abflex{
-        flex-direction: column;
-        justify-content: center;
-        gap: 0;
+    .about .aboutbox{
+        width: 100vw;
+        position: relative;
+        right: 2rem;
     }
    
     .about .abimg img{
         width: 18rem;
     }
-    .about h3{
-        margin-bottom:3rem;
-    }
-    .about .abcont{
-        margin-top:2rem;
-    }
+
     .edu{
         width:10vw;
         height:100vh;
     }
     .experience .edu h2{
         position:relative;
-        right:9rem;
+        right:20rem;
     }
     .edu .vr{
       position:absolute;
@@ -626,6 +650,24 @@ html,body{
     .skills .skillflex {
      flex-direction:column;
         margin-left:3rem;
+}
+.project a .projectcontainer
+{
+    width: 44rem;
+    height: fit-content;
+    flex-direction: column;
+}
+.projectcontainer img{
+    width: -webkit-fill-available;
+}
+.projectcontainer h4{
+    left: 0;
+    top: 1rem;
+}
+.projectcontainer p{
+    margin-bottom: 3rem;
+    top: 2rem;
+    left: 0;
 }
 
     .contact h3{
@@ -645,5 +687,39 @@ html,body{
     .contact .btnbox{
      margin:auto;
      justify-content: center;
+    }
+}
+
+
+
+
+@keyframes delaybottom {
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+@keyframes delayright {
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100%{ 
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@keyframes delayleft {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{ 
+        transform: translateX(0%);
+        opacity: 1;
     }
 }

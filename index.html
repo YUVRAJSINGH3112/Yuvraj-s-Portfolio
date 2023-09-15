@@ -23,13 +23,16 @@
       href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Dancing+Script:wght@700&family=Kalam&family=Poppins:wght@200;300;400;500;600&display=swap"
       rel="stylesheet"
     />
+
     <title>Portfolio</title>
   </head>
   <body>
+ 
+       <div id="preloader"><img src="preloader.gif" alt="" width="80px"></div>
 
     <!-- navbar design -->
     <header class="header">
-      <img src="logoo.png" alt="logo" width="100px"/>
+      <img src="logoo.png" class="logo" alt="logo" width="100px"/>
 
        <div id="menu-icon"><i class="fa-solid fa-ellipsis-vertical" style="color: #662d91;"></i></div>
       
@@ -89,14 +92,13 @@
 
       <!-- about section design -->
       <section class="about" id="about">
+        <div class="aboutbox">
+
         <h3>About <span>Me</span></h3>
         
-        <div class="abflex">
-
-        <div class="abimg">
             <img src="yuvraj.png" alt="">
-        </div>
-          
+
+  
         <div class="abcont">
           <p>
             As a Full Stack Developer and Intermediate Java Programmer, I bring
@@ -122,8 +124,11 @@
             and keeping up with the latest industry trends to stay at the
             forefront of technology.
           </p>
-
-          <a href="#" class="read">Read More</a>
+          <h5>Tech<span>Stack</span></h5>
+            <h6>a</h6>
+            <h6>b</h6>
+            <h6>c</h6>
+            <h6>d</h6>
         </div>
 
 </div>
@@ -346,6 +351,8 @@
       </section>
     </main>
 
+    <footer></footer>
+
 
     <!-- scripts -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -356,6 +363,5 @@
       });
     </script>
     <script src="index.js" defer></script>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   </body>
 </html>

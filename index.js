@@ -1,3 +1,10 @@
+let loader=document.getElementById("preloader");
+window.addEventListener("load",function(){
+    loader.style.display="none";
+})
+
+
+
 let menuIcon=document.querySelector("#menu-icon");
 let navbar=document.querySelector(".navbar");
 
@@ -24,3 +31,4 @@ window.onscroll=()=>{
         }
     })
 }
+
