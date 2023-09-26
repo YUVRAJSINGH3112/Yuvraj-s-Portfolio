@@ -13,7 +13,9 @@
     --bg-color:#ffffff;
     --second-bg-color:#112e42;
     --text-color:#000000;
-    --main-color:#662d91;
+    --main-color:#662d91; 
+     /* --main-color:#793FDF;  */
+
 }
 .main-theme{
     --bg-color:#ffffff;
@@ -31,6 +33,7 @@ body{
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: 1.2s;
+    overflow-x: hidden;
 }
 #preloader{
     background: #ffffff;
@@ -43,7 +46,7 @@ body{
     justify-content: center;
 }
 .logo{
-    animation: delayleft 1s ease forwards;
+    animation: delayleft 1.5s ease forwards;
     animation-delay: .2s;
 }
 #menu-icon{
@@ -66,6 +69,9 @@ body{
     color: var(--text-color);
      margin-left: 3.5rem;
      transition: .3s;
+     animation:delayright 1.5s ease forwards;
+     animation-delay: calc(.2s*var(--i));
+         opacity: 0; 
 }
 
 .navbar a:hover,.navbar a.active{
@@ -93,9 +99,15 @@ section{
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.3;
+    animation:delaytop 2s ease forwards;
+    animation-delay: 1s;
+        opacity: 0;
 }
 .homecontent h1 span{
     color: var(--main-color);
+    animation: delaytop 3s ease forwards;
+    animation-delay: 1.5s;
+        opacity: 0;
 }
 
 .homecontent #element{
@@ -104,9 +116,8 @@ section{
     font-size: 3.2rem;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: .7px var(--main-color);   
-}
-
+    -webkit-text-stroke: .7px var(--main-color);
+}   
 .typed-cursor.typed-cursor--blink{
     font-size: 3.2rem;
 }
@@ -114,9 +125,9 @@ section{
     font-size: 1.6rem;
     margin: 2rem 0 4rem;
     line-height: 1.6;
-    animation: delayleft 1s ease forwards;
-    animation-delay: .5s;
-
+    animation: delayleft 1.5s ease forwards;
+    animation-delay: 1s;
+        opacity: 0;
 }
 .btnbox{
     display: flex;
@@ -134,7 +145,7 @@ section{
     width: 15rem;
     background: var(--main-color);
     border: .2rem solid var(--main-color);
-    border-radius: .8rem;
+    border-radius: 1.8rem;
     font-size: 2rem;
     font-weight: 600;
     letter-spacing: .1rem;
@@ -142,7 +153,9 @@ section{
     z-index: 1;
  overflow: hidden;
  transition: .5s;
-
+ animation: delaybottom 1.3s ease forwards;
+    animation-delay: .4s;
+        opacity: 0;
 }
 
 .btnbox .btn::before{
@@ -188,21 +201,27 @@ color: var(--bg-color);
     align-items: center;
     margin: -10px 10px 20px 10px; 
     transition: .56s;
+    opacity: 0;
+    animation: delayright 1s ease forwards;
+    animation-delay: calc(.2s*var(--i));
 }
 .social a:hover{
    background-color: var(--main-color);
     color: var(--bg-color);
-    
 }
 .tilt{
     width: 50rem;
     position: relative;
     left: 18rem;
     z-index:-1;
-    animation: delayright 1s ease forwards;
+    opacity: 0;
+    animation: delayright 2s ease forwards;
     animation-delay: .5s;
 }
 /* about design */
+.about{
+    background-color: #007bff9c;
+}
 .aboutbox{
         box-shadow: 0px 4px 13px 2px #ccc;
         border-radius: 5%;
@@ -212,7 +231,7 @@ color: var(--bg-color);
         min-height: max-content;
         box-shadow: 0px 3px 12px 4px #ccc;
         margin-top: 5rem;
-        animation: delaybottom 1s ease forwards;
+        background-color: white;
 }
 .about h3{
     font-size: 3rem;
@@ -238,16 +257,38 @@ color: var(--bg-color);
     line-height: 1.6;
     margin-bottom: 10px;
 }
-.abcont h5{
+
+.certificate-corner{
+    padding: 4rem 19% 2rem;
+    background-color: #F6EBFF;
+}
+.certificate-corner h5{
     font-size: 3rem;
     font-weight: 500;
     margin: 3rem 0;
 }
-.abcont h5 span{
-    color: var(--main-color);
+.certificate-corner h5 span{
+    color: #7161ef;
 }
-
-
+.certificate{
+    height: 12rem;
+    width: 37rem;
+    display: flex;
+    gap: 2rem;
+}
+.certificate .certificatedetail h4{
+    font-size: 2rem;
+}
+.certificate .certificatedetail p{
+    margin: 2px 0;
+    color: grey;
+    font-size: 1.3rem;
+}
+.certificate .certificatedetail h6{
+    font-size: 1.4rem;
+    color: gray;
+    font-weight: 100;
+}
 
 /* experiencesection design */
  .experience h3{
@@ -340,6 +381,12 @@ color: var(--bg-color);
     bottom: 5rem;
 }
 /* skills design */
+.skills{
+    padding: 4rem 19% 2rem;
+    min-height: 60vh;
+    margin-top: 10rem;
+    background-color: #FEFEDF;
+}
 .skills h3{
     font-size: 3rem;
     font-weight: 700;
@@ -351,58 +398,19 @@ color: var(--bg-color);
     color: var(--main-color);
 }
 .skills .skillflex{
-   display:inline-flex;
-}
- .skills .skillbox{
-    height: 15rem;
-    border: 2px solid var(--main-color);
-    width: 40rem;
-    border-radius: 12px;
-    margin: 5px;
-    transition: 1s;
-    position: relative;
-}
-.skills .skillbox:hover{
-    box-shadow: 2px 5px 13px 2px #ccc;
-}
-.skills .skillbox::before{
-     content:'';
-    width: 0;
-    height: 100%;
-    position:absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-color:var(--bg-color);
-}
-.skills .skillbox:hover::before{
-        width: 100%;
-}
-.skills .skillbox .skillicon{
-    height: 40px;
-    width: 40px;
-    background: transparent;
-    display: inline-flex;
-    border: 2px solid var(--main-color);
-    border-radius: 50%;
-    font-size: 2.4rem;
-    color: var(--main-color);
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    margin: 12px 0 11px 14px;
 }
-.skills .skillbox h2{
-    font-weight: 500;
-    font-size:1.5rem;
-    color: var(--main-color);
-    position: relative;
-    left: 2rem;
+.skillbox{
+    font-size: 2.5rem;
+    width: 100px;
+    margin: 0 8rem 6rem 0;
 }
-.skills .skillbox p{
-    position: relative;
-    left: 2rem;
-    top: 10px;
+.skillimg{
+    width: 50px;
 }
+
 /*project design*/
 .project h3{
     font-size: 3rem;
@@ -504,6 +512,30 @@ color: var(--bg-color);
      position: absolute;
     left: 90rem;
  }
+ .footer{
+display: flex;
+justify-content: space-around;
+align-items: center;
+box-shadow: 0px 4px 12px 0px #ccc;
+height: 6rem;
+}
+.footer .footer-copyrights{
+    font-size: 1.4rem;
+    color: gray;
+}
+.footer-social-links{
+
+    display: flex;
+    align-items: center;
+}
+.footer-social-links li a{
+    margin-right: 30px;
+    font-size: 13px;
+    color: gray;
+}
+
+
+
 
 
 @media screen and (max-width:1200px) {
@@ -688,7 +720,15 @@ html,body{
      margin:auto;
      justify-content: center;
     }
+
+    footer{
+        flex-direction: column;
+    flex-wrap: wrap;
+    height: 10rem;
+    gap: 2rem;
+    }
 }
+
 
 
 
@@ -716,6 +756,16 @@ html,body{
 @keyframes delayleft {
     0%{
         transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{ 
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@keyframes delaytop {
+    0%{
+        transform: translateY(-100%);
         opacity: 0;
     }
     100%{ 

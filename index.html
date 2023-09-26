@@ -4,11 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+     />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -23,7 +22,6 @@
       href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Dancing+Script:wght@700&family=Kalam&family=Poppins:wght@200;300;400;500;600&display=swap"
       rel="stylesheet"
     />
-
     <title>Portfolio</title>
   </head>
   <body>
@@ -37,11 +35,11 @@
        <div id="menu-icon"><i class="fa-solid fa-ellipsis-vertical" style="color: #662d91;"></i></div>
       
       <nav class="navbar">
-        <a href="#home" class="active">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#experience">EXPERIENCE</a>
-        <a href="#skills">SKILLS</a>
-        <a href="#projects">PROJECTS</a>
+        <a href="#home" class="active" style="--i:1;" >HOME</a>
+        <a href="about.html" style="--i:2;">ABOUT</a>
+        <a href="#skills" style="--i:4;">SKILLS</a>
+        <a href="#projects" style="--i:5;">PROJECTS</a>
+        <a href="/contact.html" style="--i:6;">CONTACTS</a>
       </nav>
     </header>
 
@@ -68,12 +66,12 @@
           </p>
 
           <div class="social">
-            <a target="_blank" href="https://github.com/YUVRAJSINGH3112"
+            <a target="_blank" href="https://github.com/YUVRAJSINGH3112" style="--i:6;"
               ><i class="bx bxl-github"></i
             ></a>
             <a
               target="_blank"
-              href="https://www.linkedin.com/in/yuvraj-singh-2b4a28280"
+              href="https://www.linkedin.com/in/yuvraj-singh-2b4a28280" style="--i:7;"
               ><i class="bx bxl-linkedin"></i
             ></a>
           </div>
@@ -92,6 +90,7 @@
 
       <!-- about section design -->
       <section class="about" id="about">
+
         <div class="aboutbox">
 
         <h3>About <span>Me</span></h3>
@@ -124,155 +123,64 @@
             and keeping up with the latest industry trends to stay at the
             forefront of technology.
           </p>
-          <h5>Tech<span>Stack</span></h5>
-            <h6>a</h6>
-            <h6>b</h6>
-            <h6>c</h6>
-            <h6>d</h6>
+
+         
         </div>
 
-</div>
-      </section>
+       </div>
 
-
-      <!-- experience section design -->
-      <section class="experience" id="experience">
-        <h3>My <span>Journey</span></h3>
-
-        <div class="expflex">
-
-          <div class="edu">
-            <h2>Education</h2>
-              
-            <div class="educationbox">
-
-            <i class="fa-regular fa-calendar-days" style="color: #662d91;"></i><h5>2015-2023</h5>
-             <h4>Modern Academy Inter College</h4>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam itaque, placeat repudiandae amet saepe!</p>
-
-            </div>
-
-            <div class="educationbox">
-
-              <i class="fa-regular fa-calendar-days" style="color: #662d91;"></i><h5>2015-2023</h5>
-               <h4>Babu Banarasi Das Northern India Institue of Technology</h4>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam itaque, placeat repudiandae amet saepe!</p>
-  
-              </div>
-              <div class="vr"></div>
-            
-          </div>
-
-          <div class="exp">
-            <h2>Experiences</h2>
-
-            <div class="educationbox">
-
-              <i class="fa-regular fa-calendar-days" style="color: #662d91;"></i><h5>2015-2023</h5>
-               <h4>Babu Banarasi Das Northern India Institue of Technology</h4>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam itaque, placeat repudiandae amet saepe!</p>
-  
-              </div>
-
-            <div class="educationbox">
-
-              <i class="fa-regular fa-calendar-days" style="color: #662d91;"></i><h5>2015-2023</h5>
-               <h4>Babu Banarasi Das Northern India Institue of Technology</h4>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam itaque, placeat repudiandae amet saepe!</p>
-  
-              </div>
-              
-            <div class="educationbox">
-
-              <i class="fa-regular fa-calendar-days" style="color: #662d91;"></i><h5>2015-2023</h5>
-               <h4>Babu Banarasi Das Northern India Institue of Technology</h4>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam itaque, placeat repudiandae amet saepe!</p>
-  
-              </div>
-              <div class="vr"></div>
-          </div>
-          
-        </div>
       </section>
 
       <!-- skills section design -->
-      <section class="skills" id="skills">
-        <h3>My <span>Skills</span></h3>
+      <section class="skills" id="skills" style="background-color: #c0aeff61;">
+
+        <h3>Tech<span>Stack</span></h3>
 
         <div class="skillflex">
-          <div class="skillbox">
-            <div class="skillicon"><i class="bx bxl-html5"></i></div>
-            <h2>HTML</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
-              amet.
-            </p>
-          </div>
 
-          <div class="skillbox">
-            <div class="skillicon"><i class="bx bxl-css3"></i></div>
-            <h2>CSS3</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
-              amet.
-            </p>
-          </div>
+      <div class="skillbox">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png" class="skillimg" alt="">
+        <h6>HTML 5</h6>
+      </div>
+      <div class="skillbox">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" class="skillimg" alt="">
+        <h6>CSS</h6>
+      </div>
+      <div class="skillbox">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" class="skillimg" alt="">
+        <h6>JavaScript</h6>
+      </div>
+      <div class="skillbox">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/640px-Bootstrap_logo.svg.png" class="skillimg" style="width:65px ;" alt="">
+        <h6>Bootstrap</h6>
+      </div>
+      <div class="skillbox">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/800px-React.svg.png" class="skillimg" style="width:60px ;" alt="">
+        <h6>React</h6>
+      </div>
+      <div class="skillbox">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png" class="skillimg" alt="">
+        <h6>HTML 5</h6>
+      </div>
+      <div class="skillbox">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png" class="skillimg" alt="">
+        <h6>HTML 5</h6>
+      </div>
+      <div class="skillbox">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png" class="skillimg" alt="">
+        <h6>HTML 5</h6>
+      </div>
+      <div class="skillbox">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png" class="skillimg" alt="">
+        <h6>HTML 5</h6>
+      </div>
+      <div class="skillbox">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png" class="skillimg" alt="">
+        <h6>HTML 5</h6>
+      </div>
 
-          <div class="skillbox">
-            <div class="skillicon"><i class="bx bxl-javascript"></i></div>
-            <h2>JavaScript</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
-              amet.
-            </p>
-          </div>
-        </div>
 
-        <div class="skillflex">
-          <div class="skillbox">
-            <div class="skillicon"><i class="bx bxl-java"></i></div>
-            <h2>Java</h2>
-            <p>Certified Intermediate Java Programmer on HsackerRank.</p>
-          </div>
-
-          <div class="skillbox">
-            <div class="skillicon"><i class="bx bxl-react"></i></div>
-            <h2>React Js</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
-              amet.
-            </p>
-          </div>
-
-          <div class="skillbox">
-            <div class="skillicon"><i class="bx bxl-nodejs"></i></div>
-            <h2>Node Js</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
-              amet.
-            </p>
-          </div>
-        </div>
-
-        <div class="skillflex">
-          <div class="skillbox">
-            <div class="skillicon"><i class="bx bxl-html5"></i></div>
-            <h2>SQL</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
-              amet.
-            </p>
-          </div>
-
-          <div class="skillbox">
-            <div class="skillicon"><i class="bx bxl-html5"></i></div>
-            <h2>MongoDB</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
-              amet.
-            </p>
-          </div>
-        </div>
+    </div>
 
       </section>
 
@@ -311,47 +219,76 @@
         </div>
       </section>
       
+  
+      <div class="certificate-corner">  
 
-      <!-- contact section design -->
-      <section class="contact" id="contact">
-        <h3>Get in <span>Touch!</span></h3>
+      <h5><span>Certificates</span></h5>
 
-        <div class="conflex">
-
-          <form action="https://formsubmit.co/yuviyuvi1129@gmail.com" method="post">
-            <div class="inputbox">
-              <input type="text" name="name" placeholder="Your Good Name" />
-            </div>
-
-            <div class="inputbox">
-              <input type="email" placeholder="Email" name="email"/>
-            </div>
-
-            <div class="inputbox">
-              <input type="number" placeholder="Mobile No." name="number" />
-            </div>
-
-            <div class="textareabox">
-              <textarea
-                name="message"
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Your Message"
-              ></textarea>
-            </div>
-            <div class="btnbox">
-              <button type="submit" class="btn submit">Submit</button>
-            </div>
-          </form>
-
-        <img src="https://finwave.co/images/gif/Contact-1.gif" alt="" class="congif">
-          
+      <div class="certificate">
+        <i class="fa-solid fa-award" style="color: #7161ef; font-size: 4rem; margin-top: 6px;"></i>
+        <div class="certificatedetail">
+        <h4>HackerRank</h4>
+        <p>Java (Basic) HackerRank Certificate</p>
+        <h6>CREDENTIAL ID: 2CDF17CE3E1C</h6>
         </div>
-      </section>
+      </div>
+
+      
+      <div class="certificate">
+        <i class="fa-solid fa-award" style="color: #7161ef; font-size: 4rem; margin-top: 6px;"></i>
+        <div class="certificatedetail">
+        <h4>Bharat Intern</h4>
+        <p>Web Development Certificate</p>
+        <h6></h6>
+        </div>
+      </div>
+      
+      
+    </div> 
+
     </main>
 
-    <footer></footer>
+
+
+    <footer class="footer">
+
+      <div class="footer-social">
+        <ul class="footer-social-links">
+          
+          <li>
+            <a href="https://www.facebook.com/aakarshit.giri" target="_blank"><i class="fab fa-facebook"></i>
+              Facebook</a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/aakarshitgiri/" target="_blank"><i class="fab fa-instagram"></i>
+              Instagram</a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/aakarshitgiri/" target="_blank"><i class="fab fa-linkedin"></i>
+              LinkedIn</a>
+          </li>
+
+          <li>
+            <a href="https://msng.link/o/?aaka1998=tg" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
+          </li>
+
+          <li>
+            <a href="https://www.wa.link/9okj75" target="_blank"><i class="fab fa-whatsapp"></i> Whatsapp</a>
+          </li>
+
+          <li>
+            <a href="mailto:aakarshitgiri1998@gmail.com?cc=Need Help&amp;subject=Need%20Help%3A%20www.aakarshitgiri.com&amp;body=Hi%20Aakarshit%2C%0AI%20need%20your%20help" target="_blank"><i class="fas fa-envelope"></i> Gmail</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-copyrights">
+        <p>© 2021 All rights reserved.Yuvraj Singh.</p>
+      </div>
+
+    </footer>
 
 
     <!-- scripts -->
@@ -360,8 +297,11 @@
       var typed = new Typed("#element", {
         strings: ["Intermediate Java Programmer", "Web Developer."],
         typeSpeed: 100,
+        
       });
     </script>
     <script src="index.js" defer></script>
+
+
   </body>
 </html>
