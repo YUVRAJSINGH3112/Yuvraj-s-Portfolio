@@ -219,9 +219,6 @@ color: var(--bg-color);
     animation-delay: .5s;
 }
 /* about design */
-.about{
-    background-color: #007bff9c;
-}
 .aboutbox{
         box-shadow: 0px 4px 13px 2px #ccc;
         border-radius: 5%;
@@ -259,20 +256,25 @@ color: var(--bg-color);
 }
 
 .certificate-corner{
-    padding: 4rem 19% 2rem;
+    padding: 4rem 5% 2rem 18%;
     background-color: #F6EBFF;
 }
 .certificate-corner h5{
     font-size: 3rem;
     font-weight: 500;
-    margin: 3rem 0;
+    margin: 3rem 0 5rem 0;
 }
 .certificate-corner h5 span{
     color: #7161ef;
 }
+.certificateflex{
+    min-height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+}
 .certificate{
     height: 12rem;
-    width: 37rem;
+    width: 55rem;
     display: flex;
     gap: 2rem;
 }
@@ -542,6 +544,9 @@ height: 6rem;
     html{
         font-size: 55%;
     }
+    .tilt{
+        left: 10rem;
+    }
 }
 @media screen and (max-width:991px) {
     html,body{
@@ -560,9 +565,12 @@ height: 6rem;
     .home{
         padding: 0 4%;
     }
+    .tilt{
+        left:4rem;
+    }
 }
 
-@media screen and (max-width:758px) {
+@media screen and (max-width:798px) {
     html,body{
     height:100%;
     width:100%;
@@ -606,19 +614,22 @@ height: 6rem;
         overflow-x:hidden;
     }
     .tilt{
-       width: 32rem;
+       width: 47rem;
         overflow-x: hidden;
         position: relative;
         left: 0;
-        top: 15rem;
+        top: 20rem;
     }
 
     .homecontent{
         position:relative;
-        top:15rem;
-        width:40rem
+        top:16rem;
+        width:64rem;
+        padding:0 7rem;
     }
-
+    .aboutbox{
+        width: 85vw;
+    }
 }
 
 
@@ -642,6 +653,7 @@ html,body{
         width: 100%;
         position: relative;
         top: 15rem;
+        padding:0;
     }
     .tilt{
         width: 40rem;
