@@ -71,7 +71,7 @@ body{
  .navbar .navbar1{
     background-color: var(--main-color);
     border-bottom-left-radius: 15px;
-    height: 55px;
+    height: 50px;
     display: flex;
     align-items: center;
     display: flex;
@@ -83,26 +83,32 @@ body{
     color:white;
     margin-left: 10rem;
  }
- .navbar .navbar1 a i{
+ .navbar .navbar1 .cont1 a i{
     margin-right: 4px;
     font-size: 2.2rem;
     position: relative;
     top: 5px;
 }
+.navbar .navbar1 .cont2 a i{
+    font-size: 3rem;
+    color: white;
+    position: relative;
+    right: 50px;
+    margin-left: 2rem;
+}
 .navbar .navbar2{
-    text-align: center;
+    text-align: right;
 }
 .navbar .navbar2 a{
     font-weight: 500;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     color: var(--text-color);
-     margin-left: 3.5rem;
+     margin-right: 10rem;
      transition: .3s;
      animation:delayright 1.5s ease forwards;
      animation-delay: calc(.2s*var(--i));
          opacity: 0; 
 }
-
 .navbar .navbar2 a:hover,.navbar a.active{
        color: var(--main-color);
 }
